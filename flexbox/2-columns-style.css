@@ -1,0 +1,59 @@
+body {
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.header, .footer {
+  position: relative;
+  max-width: 100%;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 0px;
+  
+  visibility: hidden;
+}
+
+
+.wrapper {
+  position: relative;
+  padding: 30px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro, .main-content, .other-content {
+  padding: 15px;
+  position: relative;
+
+  /* For demo only */
+  min-height: 60vh;
+  width: 45%;
+  margin: 30px 0px;
+}
+
+.intro {
+  background: #FF4848;
+}
+
+.main-content {
+  background: #5757FF;
+}
+
+.other-content {
+  background: #1FCB4A;
+}
+
+@media(min-width:992px) {
+  .wrapper {
+    width: 992px;
+
+    /* For demo only */
+    border: dotted;
+  }
+}

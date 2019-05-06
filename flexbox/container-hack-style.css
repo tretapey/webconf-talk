@@ -1,0 +1,108 @@
+body {
+  font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.header, .footer {
+  position: relative;
+  max-width: 100%;
+  padding: 15px;
+  box-shadow: 0px 0px 10px 0px;
+  
+  visibility: hidden;
+}
+
+
+.wrapper {
+  position: relative;
+  padding: 30px;
+  margin: 30px auto;
+
+  height: 70vh;
+}
+
+.container {
+  padding: 0;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.intro, .main-content, .other-content, .other-content-mobile {
+  padding: 15px;
+  position: relative;
+
+
+  /* For demo only */
+  height: 30%;
+  margin: 30px 0px;
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.intro {
+  background: #FF4848;
+  margin-bottom: 15px;
+}
+
+.main-content {
+  background: #5757FF;
+}
+
+.other-content {
+  background: #1FCB4A;
+  margin-top: 15px;
+  display: none;
+}
+
+.other-content-mobile {
+  background: #1FCB4A;
+  display: block;
+}
+
+@media(min-width:992px) {
+  .wrapper {
+    width: 992px;
+
+    display: flex;
+    justify-content: space-between;
+
+    /* For demo only */
+    border: dotted;
+  }
+
+  .container {
+    padding: 0 15px;
+
+    /* For demo only */
+    display: flex; 
+    flex-direction: column;
+  }
+
+  .intro, .main-content, .other-content, .other-content-mobile {
+    height: auto;
+  }
+
+  .other-content {
+    margin-top: 15px;
+    display: block;
+  }
+
+  .other-content-mobile {
+    display: none;
+  }
+
+  .intro {
+    margin-bottom: 15px;
+  }
+
+  .main-content {
+    margin-left: 15px;
+  }
+
+}
